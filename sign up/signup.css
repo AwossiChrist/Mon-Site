@@ -1,0 +1,36 @@
+body, html {
+    background-image: url('/assets/img/depositphotos_2.jpg');
+    height: 100%;
+    background-size: cover;  /* L'image couvre tout l'écran */
+    background-position: center; /* Centrer l'image de fond */
+    background-repeat: no-repeat;
+    background-attachment: fixed;  /* Rendre l'image immobile */
+    overflow: hidden; /* Désactive le scroll */
+}
+
+.card {
+    margin-top: 1rem; /* Utilisation de rem pour les marges */
+    opacity: 0.8; /* Ajoute de la transparence à la carte si besoin */
+}
+
+/* Image Displaying */
+.person-card {
+    margin-top: 5rem;
+    padding-top: 5rem;
+    position: relative; /* Ajout de cette règle pour gérer l'image de profil */
+}
+
+.person-card .card-title {
+    text-align: center;
+}
+
+.person-card .person-img {
+    width: 10rem; /* Remplacez em par rem pour une meilleure unité de mesure */
+    position: absolute;
+    top: -5rem;
+    left: 50%;
+    transform: translateX(-50%); /* Remplacement de margin-left pour centrer plus efficacement */
+    border-radius: 50%; /* Utilisation de 50% pour arrondir l'image */
+    overflow: hidden;
+    background-color: white;
+}
